@@ -14,9 +14,8 @@ sections:
       - title: Developers
         price: Free
         details: No credit card required
-        description: |+
-          # 24 Hour Trial
-
+        description: |
+          ### 24 Hour Trial
         features:
           - Feature one
           - Feature two
