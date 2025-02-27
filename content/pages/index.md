@@ -411,6 +411,6 @@ sections:
     type: GenericSection
 seo:
   type: Seo
-  metaTitle: IPTV
+  metaTitle: Home - IPTV
 type: PageLayout
 ---
