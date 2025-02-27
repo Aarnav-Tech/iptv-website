@@ -1,10 +1,10 @@
 {
     "logo": {
-        "url": "/images/logo-white.svg",
+        "url": "/images/iptv-logo-32x.jpeg",
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "A Better Way To Stream Content.\n",
     "primaryLinks": {
         "title": "Product",
         "links": [
@@ -47,35 +47,27 @@
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
-                "type": "Link"
             }
         ],
         "type": "FooterLinksGroup"
     },
     "socialLinks": [
         {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
+            "altText": "FB link",
+            "url": "https://facebook.com",
+            "icon": "facebook",
             "type": "Social"
         },
         {
             "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
+            "url": "https://twitter.com",
             "icon": "twitter",
             "type": "Social"
         },
         {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
-            "icon": "linkedin",
+            "altText": "Insta link",
+            "url": "https://instagram.com",
+            "icon": "instagram",
             "type": "Social"
         },
         {
@@ -103,7 +95,7 @@
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
+    "copyrightText": "Copyright © 2025, IPTV\n",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }
