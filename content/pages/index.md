@@ -428,7 +428,7 @@ sections:
         textAlign: center
     type: FeaturedItemsSection
   - title:
-      text: Drop A Message
+      text: Drop A Message On Our Whatsapp Number.
       color: text-dark
       type: TitleBlock
     subtitle: Section with a form subtitle
