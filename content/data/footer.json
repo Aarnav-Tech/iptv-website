@@ -60,7 +60,7 @@
         },
         {
             "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
+            "url": "https://twitter.com",
             "icon": "twitter",
             "type": "Social"
         },
