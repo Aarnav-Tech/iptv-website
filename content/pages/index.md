@@ -432,11 +432,8 @@ sections:
       color: text-dark
       type: TitleBlock
     subtitle: +61 489089061
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+    text: |
+      We Will Try To Get Back To You As Soon As Possible!
     badge:
       label: Contact Us
       color: text-primary
