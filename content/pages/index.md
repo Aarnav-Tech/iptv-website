@@ -1,4 +1,5 @@
 ---
+modelName: Page
 title: Home
 slug: /
 sections:

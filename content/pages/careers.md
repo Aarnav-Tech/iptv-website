@@ -1,4 +1,5 @@
 ---
+modelName: Page
 title: Careers
 slug: careers
 sections:

@@ -1,4 +1,5 @@
 ---
+modelName: Page
 title: Pricing
 slug: pricing
 sections:
