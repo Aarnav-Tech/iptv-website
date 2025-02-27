@@ -413,5 +413,6 @@ seo:
   type: Seo
   metaTitle: Home - IPTV
   metaDescription: IPTV STREAMING SERVICES
+  socialImage: /images/633fee9c3a16a463ad2f7388-iptv-subscription-not-box-including.jpg
 type: PageLayout
 ---
