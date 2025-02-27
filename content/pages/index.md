@@ -8,10 +8,9 @@ sections:
       color: text-dark
       type: TitleBlock
     subtitle: An Alternative To Traditional OTT Apps.
-    text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+    text: |
+      All your **shows, movies** and **content** restricted to one platform
+      Is **available** in our service!
     actions:
       - label: Get started
         altText: ''
