@@ -14,9 +14,9 @@ sections:
       - title: Developers
         price: Free
         details: No credit card required
-        description: >-
-          Sed ut perspiciatis unde omnis, iste natus error sit voluptatem
-          accusantium doloremque.
+        description: |+
+          # 24 Hour Trial
+
         features:
           - Feature one
           - Feature two
