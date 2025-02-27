@@ -19,7 +19,22 @@ export const config = defineStackbitConfig({
     ssgName: 'nextjs',
     nodeVersion: '18',
     styleObjectModelName: 'ThemeStyle',
-    contentSources: [gitContentSource],
+    contentSources: [
+        gitContentSource,
+        new GitContentSource({
+            rootPath: __dirname,
+            contentDirs: ["content"],
+            models: [
+                {
+                    name: "Page",
+                    type: "page",
+                    urlPath: "/{slug}",
+                    filePath: "content/pages/{slug}.json",
+                    fields: [{ name: "title", type: "string", required: true }]
+                }
+            ],
+        })
+    ],
     presetSource: {
         type: 'files',
         presetDirs: ['sources/local/presets']
@@ -35,16 +50,16 @@ export const config = defineStackbitConfig({
                 regardless of whether the slug is '/', 'slug' or '/slug' */
                 slug = slug.replace(/^\/+/, '');
                 switch (document.modelName) {
-                    case 'PostFeedLayout':
+                   /* case 'PostFeedLayout':
                         return {
                             urlPath: '/blog',
                             document: document
-                        };
-                    case 'PostLayout':
+                        }; */
+                   /* case 'PostLayout':
                         return {
                             urlPath: `/blog/${slug}`,
                             document: document
-                        };
+                        }; */
                     default:
                         return {
                             urlPath: `/${slug}`,

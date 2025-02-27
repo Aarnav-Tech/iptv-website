@@ -6,7 +6,9 @@ const nextConfig = {
         stackbitPreview: process.env.STACKBIT_PREVIEW
     },
     trailingSlash: true,
-    reactStrictMode: true
+    reactStrictMode: true,
+    output: 'export',
+    basePath: '',
 };
 
 module.exports = nextConfig;
