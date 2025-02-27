@@ -51,7 +51,7 @@ sections:
         textAlign: left
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: Benefits
       color: text-dark
       styles:
         self:
