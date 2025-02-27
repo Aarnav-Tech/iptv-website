@@ -62,10 +62,9 @@ sections:
       - type: FeaturedItem
         title: Easy Content Management
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          Our UI allows you to easily search for the movies and shows you
+          deserve!
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
