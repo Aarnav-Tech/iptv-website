@@ -31,7 +31,7 @@ sections:
         elementId: ''
         type: Link
     media:
-      url: /images/main-hero.svg
+      url: /images/633fee9c3a16a463ad2f7388-iptv-subscription-not-box-including.jpg
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
