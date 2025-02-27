@@ -31,7 +31,7 @@ sections:
         elementId: ''
         type: Link
     media:
-      url: /images/main-hero.svg
+      url: /images/633fee9c3a16a463ad2f7388-iptv-subscription-not-box-including.jpg
       altText: Unblock your team boost your time to production preview
       elementId: ''
       type: ImageBlock
@@ -410,9 +410,9 @@ sections:
     colors: bg-light-fg-dark
     type: GenericSection
 seo:
-  metaTitle: Home - Demo site
-  metaDescription: This demo site is built with Netlify Create.
-  socialImage: /images/main-hero.jpg
   type: Seo
+  metaTitle: Home - IPTV
+  metaDescription: IPTV STREAMING SERVICES
+  socialImage: /images/633fee9c3a16a463ad2f7388-iptv-subscription-not-box-including.jpg
 type: PageLayout
 ---
