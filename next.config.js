@@ -7,7 +7,8 @@ const nextConfig = {
     },
     trailingSlash: true,
     reactStrictMode: true,
-    output: 'export'
+    output: 'export',
+    basePath: '',
 };
 
 module.exports = nextConfig;
