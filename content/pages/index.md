@@ -412,5 +412,6 @@ sections:
 seo:
   type: Seo
   metaTitle: Home - IPTV
+  metaDescription: IPTV STREAMING SERVICES
 type: PageLayout
 ---
