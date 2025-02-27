@@ -46,13 +46,27 @@ export const config = defineStackbitConfig({
             .map((document) => {
                 let slug = (document.fields.slug as DocumentStringLikeFieldNonLocalized)?.value;
                 if (!slug) return null;
+                /* Remove the leading slash in order to generate correct urlPath
+                regardless of whether the slug is '/', 'slug' or '/slug' */
                 slug = slug.replace(/^\/+/, '');
-                return {
-                    urlPath: `/${slug}`,
-                    document: document
-                };
-            })
-            .filter((entry) => entry !== null) as SiteMapEntry[];
+                switch (document.modelName) {
+                   /* case 'PostFeedLayout':
+                        return {
+                            urlPath: '/blog',
+                            document: document
+                        }; */
+                   /* case 'PostLayout':
+                        return {
+                            urlPath: `/blog/${slug}`,
+                            document: document
+                        }; */
+                    default:
+                        return {
+                            urlPath: `/${slug}`,
+                            document: document
+                        };
+                }
+            });
     }
 });
 
