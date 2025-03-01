@@ -1,12 +1,30 @@
 //stackbit.config.ts
 import { defineStackbitConfig, DocumentStringLikeFieldNonLocalized, SiteMapEntry } from '@stackbit/types';
 import { GitContentSource } from '@stackbit/cms-git';
-import { allModels } from 'sources/local/models';
+// import { allModels } from 'sources/local/models';
 
 const gitContentSource = new GitContentSource({
     rootPath: __dirname,
     contentDirs: ['content'],
-    models: Object.values(allModels),
+    models: [
+        {
+            name: "Page",
+            type: "page",
+            urlPath: "/{slug}",
+            filePath: "content/pages/{slug}.json",
+            fields: [{ name: "title", type: "string", required: true }]
+        },
+        {
+            name: "PageLayout",
+            type: "page",
+            urlPath: "/{slug}",
+            filePath: "content/pages/{slug}.md",
+            fields: [
+                { name: "title", type: "string", required: true },
+                { name: "slug", type: "string", required: true }
+            ]
+        }
+    ],
     assetsConfig: {
         referenceType: 'static',
         staticDir: 'public',
@@ -21,30 +39,7 @@ export const config = defineStackbitConfig({
     nodeVersion: '18',
     styleObjectModelName: 'ThemeStyle',
     contentSources: [
-        gitContentSource,
-        new GitContentSource({
-            rootPath: __dirname,
-            contentDirs: ["content"],
-            models: [
-                {
-                    name: "Page",
-                    type: "page",
-                    urlPath: "/{slug}",
-                    filePath: "content/pages/{slug}.json",
-                    fields: [{ name: "title", type: "string", required: true }]
-                },
-                {
-                    name: "PageLayout",
-                    type: "page",
-                    urlPath: "/{slug}",
-                    filePath: "content/pages/{slug}.md",
-                    fields: [
-                        { name: "title", type: "string", required: true },
-                        { name: "slug", type: "string", required: true }
-                    ]
-                }
-            ],
-        })
+        gitContentSource
     ],
     presetSource: {
         type: 'files',
