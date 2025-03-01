@@ -1,7 +1,6 @@
 //stackbit.config.ts
 import { defineStackbitConfig, DocumentStringLikeFieldNonLocalized, SiteMapEntry } from '@stackbit/types';
 import { GitContentSource } from '@stackbit/cms-git';
-// import { allModels } from 'sources/local/models';
 
 const gitContentSource = new GitContentSource({
     rootPath: __dirname,
@@ -33,7 +32,7 @@ const gitContentSource = new GitContentSource({
     }
 });
 
-export const config = defineStackbitConfig({
+const config = defineStackbitConfig({
     stackbitVersion: '~0.7.0',
     ssgName: 'nextjs',
     nodeVersion: '18',
@@ -52,15 +51,12 @@ export const config = defineStackbitConfig({
             .map((document) => {
                 let slug = (document.fields.slug as DocumentStringLikeFieldNonLocalized)?.value;
                 if (!slug) return null;
-                // Handle the root URL case
                 if (slug === '/') {
                     return {
                         urlPath: '/',
                         document: document
                     };
                 }
-                // Remove the leading slash in order to generate correct urlPath
-                // regardless of whether the slug is '/', 'slug' or '/slug'
                 slug = slug.replace(/^\/+/, '');
                 return {
                     urlPath: `/${slug}`,
